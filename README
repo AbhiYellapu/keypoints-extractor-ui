@@ -1,0 +1,59 @@
+# Keypoints Extractor UI
+
+This project provides a user interface for extracting keypoints from audio/video files. It allows users to upload files, process them to extract transcriptions and key points, and view the results in a user-friendly manner.
+
+## Features
+
+-   **File Upload**: Supports uploading audio and video files in various formats (MP3, WAV, M4A, MP4, MOV, AVI).
+-   **Transcription**: Automatically transcribes the audio from the uploaded file using Speech-to-Text technology.
+-   **Key Points Extraction**: Extracts key points or a summary from the transcription using NLP techniques.
+-   **User Interface**: Presents the transcription and key points in a clear and organized manner, allowing for easy review and analysis.
+-   **Processing Status**: Provides real-time feedback on the processing status of the uploaded file, including transcription and key point extraction progress.
+-   **Download Results**: Allows users to download the transcription and key points in various formats (e.g., TXT, JSON).
+
+## Technologies Used
+
+-   **React**: A JavaScript library for building user interfaces.
+-   **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+-   **React Hot Toast**: For displaying toast notifications.
+-   **Lucide React**: For icons.
+-   **Vite**: Build tool.
+-   **Tailwind CSS**: CSS framework.
+
+## Getting Started
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone <repository-url>
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+    This will start the UI on `http://localhost:5173`. Make sure your backend server is running as well.
+    The backend code is in ```https://github.com/AbhiYellapu/keypoints-extractor-server```
+
+## Configuration
+
+The UI expects the backend server to be running on `http://127.0.0.1:5000`. This can be configured in `src/lib/api.ts`.
+
+### Environment Variables
+
+The following environment variables are required:
+
+-   `API_BASE_URL`: The URL of the backend API.  Defaults to `http://127.0.0.1:5000`.
+
+## Contributing
+
+Contributions are welcome! Please submit a pull request with your proposed changes.Make sure to include any necessary documentation and tests.
+
